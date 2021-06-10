@@ -1,0 +1,138 @@
+.banner {
+  height: 480rpx;
+  width: 750rpx;
+}
+
+.banner image {
+  height: 480rpx;
+  width: 100%;
+}
+
+.chooseSchool {
+  display: flex;
+  height: 100rpx;
+  width: 650rpx;
+  background-color: #fff;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  position: absolute;
+  top: 430rpx;
+  left: 50rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.chooseService {
+  height: 520rpx;
+  width: 700rpx;
+  margin-left: 25rpx;
+  margin-top: 80rpx;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+
+}
+
+.Sever01 {
+
+  float: left;
+}
+
+.Sever02 {
+
+  float: right;
+}
+
+.Sever03 {
+  background-color: #fff;
+  float: left;
+  margin-top: 10rpx;
+  height: 180rpx;
+  width: 700rpx;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  display: flex;
+
+}
+
+.Sever01,
+.Sever02 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 345rpx;
+  width: 345rpx;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  text-align: center;
+
+}
+
+.chooseSchool image {
+
+  height: 60rpx;
+  width: 60rpx;
+
+}
+
+.chooseSchool text {
+  position: relative;
+  left: 120rpx;
+  bottom: 20rpx;
+}
+
+.Sever02 image {
+  height: 230rpx;
+  width: 230rpx;
+  margin: 30rpx 0 0 80rpx;
+}
+
+.Sever01 image {
+  height: 230rpx;
+  width: 230rpx;
+  margin: 30rpx 57.5rpx 0;
+}
+
+.Sever03 image {
+  height: 180rpx;
+  width: 180rpx;
+  margin-left: 100rpx;
+}
+
+.Sever03 text {
+  font-size: 50rpx;
+  margin-top: 60rpx;
+}
+
+.option {
+  height: 185rpx;
+  width: 650rpx;
+  background-color: gold;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  position: absolute;
+  top: 530rpx;
+  left: 50rpx;
+  font-size: 55rpx;
+  text-align: center;
+}
+
+.school {
+  flex: 0 1 250rpx;
+  text-align: center;
+  margin-right: 50rpx;
+  font-size: 35rpx;
+ 
+}
+
+.school02 {
+  padding: 10rpx;
+
+}

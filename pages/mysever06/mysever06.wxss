@@ -1,0 +1,43 @@
+/* pages/mysever06/mysever06.wxss */
+.top {
+  background-color: white;
+  border-radius: 30rpx;
+  display: flex;
+  margin: 20rpx 50rpx;
+  padding: 30rpx;
+  font-weight: bold;
+}
+.top input {
+  margin-left: 30rpx;
+  border: 1rpx solid black;
+  flex-grow: 1;
+  border-radius: 30rpx;
+  padding: 0 20rpx;
+}
+page {
+  background-color: #CCE8CF;
+  height: 750rpx;
+}
+.bodyer {
+  margin: 10rpx 50rpx;
+  background-color: white;
+  border-radius: 30rpx;
+  padding: 20rpx;
+  height: 800rpx;
+  display: flex;
+  flex-direction: column;
+}
+.bodyer text {
+  font-weight: bold;
+}
+.bodyer textarea {
+  border: 1rpx black solid;
+  border-radius: 30rpx;
+  margin: 20rpx 0;
+ padding: 20rpx;
+ width: 560rpx;
+ flex-grow: 1;
+}
+button {
+  margin-top: 60rpx;
+}

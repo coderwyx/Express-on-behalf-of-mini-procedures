@@ -1,0 +1,106 @@
+
+image {
+  width: 750rpx;
+  height: 500rpx;
+}
+.ifon {
+  
+  background-color: white;
+  height: 200rpx;
+  width: 650rpx;
+  position: absolute;
+  top: 450rpx;
+  left: 50rpx;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius:15rpx ;
+
+}
+.avatarUrl {
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  position: absolute; 
+  left: 50rpx;
+  top: -50rpx;
+}
+.ifonMine {
+  
+  background-color: pink;
+  position: absolute;
+  left: 50rpx;
+  top: -50rpx;
+  font-size: 30rpx;
+  
+
+}
+.ifon text {
+  
+ position: absolute;
+ left: 240rpx;
+ top: 10rpx;
+}
+.mySever {
+  height: 550rpx;
+  width: 650rpx;
+  background-color: white;
+  margin: 160rpx 50rpx 0;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius:15rpx ;
+  position: relative;
+}
+.Sever {
+  background-color:white;
+  height: 130rpx;
+  width: 130rpx;
+  display: inline-block;
+  margin: 60rpx 40rpx 0 45rpx;
+  /* padding: 70rpx 40rpx 0 45rpx; */
+  font-size: 20rpx;
+ 
+}
+.Sever image {
+  height: 130rpx;
+  width: 130rpx;
+  
+}
+.Sever text {
+  
+  margin-left: 20rpx;
+  font-weight: bold;
+}
+button {
+ 
+  height: 170rpx;
+  /* padding-top: 40rpx; */
+  
+}
+.login {
+  /* border: 1px red solid; */
+  height: 125rpx;
+  padding-top: 70rpx;
+  /* justify-items: center; */
+  text-align: center;
+  font-weight: bold;
+  font-size: 50rpx;
+}
+.money {
+  position: absolute;
+  left: 65rpx;
+  top: 135rpx;
+ 
+}
+.takeMoney {
+  width: 200rpx !important;
+  height: 50rpx;
+  position: absolute;
+  top: 130rpx;
+  left: 400rpx;
+  font-size: 30rpx !important;
+  background-color: gold;
+  padding: 0 !important;
+  padding-top: 5rpx !important;
+}

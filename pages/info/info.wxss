@@ -1,0 +1,42 @@
+page {
+  background-color: white;
+}
+
+.name,.phone {
+  display: flex;
+  border-bottom: 1rpx solid #f2f3f5;
+  height: 100rpx;
+  margin: 0 30rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.name text,.phone text {
+  width: 30%;
+}
+input {
+  width: 40%;
+  text-align: right;
+}
+.gender {
+  height: 100rpx;
+  margin: 0 30rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #f2f3f5;
+
+}
+.birthday text {
+  width: 100rpx;
+
+}
+.birthday {
+  height: 100rpx;
+  margin: 0 30rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #f2f3f5;
+}
+button {
+  margin-top: 120rpx;
+  width: 700rpx !important;
+}

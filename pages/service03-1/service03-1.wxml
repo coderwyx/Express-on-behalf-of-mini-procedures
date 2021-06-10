@@ -1,0 +1,7 @@
+<view wx:if="{{nothing}}" class="nothing"><text>目前还没有可以接的快递订单哟~</text></view>
+<view  class="list" wx:for="{{list}}" wx:key="key">
+  <view class="kuaidi">取件快递：{{item.kuaidi}}</view>
+  <view class="where"> 收货地址：{{item.where}}</view>
+  <view class="toWhere">快递大小: {{item.volume}}</view>
+  <button data-id="{{item._id}}" bindtap="takeOrders"  type="primary">接单</button>
+</view>

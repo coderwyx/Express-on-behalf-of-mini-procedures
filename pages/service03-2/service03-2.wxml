@@ -1,0 +1,12 @@
+
+<view class="nothing" wx:if="{{nothing}}"><text>目前还没有可以接的跑腿订单哟~</text></view>
+
+<view wx:for="{{list}}" wx:if="{{item.date==date||item.date==tomorrow}}" wx:key="key" class="list" >
+  <view class="buy">购买的商品:{{item.buy}}</view>
+  <view>{{item.toWhere}}</view>
+  <view wx:if="{{item.date==date}}">购买时间:今天 {{item.time}}</view>
+  <view wx:if="{{item.date==tomorrow}}">购买时间:明天 {{item.time}}</view>
+  <view>跑腿费:{{item.tip}}元</view>
+  <button data-id="{{item._id}}" data-money="{{item.money}}" bindtap="takeOrders" type="primary">接单</button>
+</view>
+

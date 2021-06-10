@@ -1,0 +1,7 @@
+<!--pages/mysever05/mysever05.wxml-->
+<!-- <text>暂未开放,敬请期待</text> -->
+<view>
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;感谢可以看到这里的人，这个小程序是作者的毕业设计。因为一些原因，这个小程序目前是还不能运营的，这是作者的第一个项目，如果可以，我会把小程序的功能完善，争取上线运营。但是作者已经毕业啦，所以如果到时候小程序完善了，我会把它交给学校的学弟学妹们来管理。祝好。\n\n\n</text>
+  <text style="float:right">一个21届毕业生</text>
+  <view id="style"></view>
+</view>

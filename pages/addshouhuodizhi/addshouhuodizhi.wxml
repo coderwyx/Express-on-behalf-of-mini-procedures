@@ -1,0 +1,19 @@
+<view class="all">
+  <view>
+    <text>收货地址：</text>
+    <input maxlength='12' bindinput="getWhere" placeholder="{{where}}"></input>
+  </view>
+  <view>
+    <text>联系人：</text>
+    <input maxlength='6' bindinput="getName" placeholder="{{name}}"></input>
+  </view>
+  <view style="border-bottom:none">
+    <text>手机号：</text>
+    <input bindinput="getPhone" placeholder="{{phone}}"></input>
+  </view>
+</view>
+<button wx:if="{{test}}" type="primary" bindtap="addShouhuodizhi">保存地址</button>
+<view class="buttom" wx:else>
+  <button bindtap="changeShouhuodizhi" type="primary">更改地址</button>
+  <button bindtap="delShouhuodizhi" type="warn">删除地址</button>
+</view>

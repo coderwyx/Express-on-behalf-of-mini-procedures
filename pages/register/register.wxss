@@ -1,0 +1,58 @@
+page {
+  background-color: white;
+}
+
+.header {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header image {
+  height: 250rpx;
+  width: 250rpx;
+  margin: 20rpx;
+}
+
+.bodyer {
+  display: flex;
+  flex-direction: column;
+  margin: 30rpx;
+  margin-top: 50rpx;
+}
+
+.bodyer view text {
+  font-size: 35rpx;
+  margin-left: 40rpx;
+  width: 35%;
+
+}
+
+.bodyer view {
+  display: flex;
+  margin: 20rpx;
+  border-bottom: solid 1rpx #ccc;
+
+
+}
+
+input {
+  height: 50rpx;
+  padding-left: 180rpx;
+ 
+}
+
+.footer {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+button {
+  margin: 100rpx;
+  margin-bottom: 150rpx;
+}

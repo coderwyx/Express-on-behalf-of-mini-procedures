@@ -1,0 +1,13 @@
+<view>
+  <text class="top">申请须知</text>
+  <text>本平台是专门为寸金师生服务的,所以申请人必须是寸金在校师生。</text>
+</view>
+<view>
+  <text class="top">帮忙须知</text>
+  <text>1.有责任心，尽心尽责，确保快递不丢件。</text>
+  <text>2.有时间观念，尽可能的保证客户的快递准时送达，如果送达不了，要提前电话告知客户，不能提前在小程序签收。</text>
+  <text>3.轻拿轻放，不要把快递随意的扔在地上。确保快递里面的货物无破损的送给客户。</text>
+  <text>4.如果遇到送达不了的快递时，需要及时反馈给小程序里的客服。</text>
+  <text>5.快递送到之后要电话联系客户，确认客户收到快递后点击确认收货。</text>
+</view>
+<button type="primary" bindtap="toHelper">我要申请</button>

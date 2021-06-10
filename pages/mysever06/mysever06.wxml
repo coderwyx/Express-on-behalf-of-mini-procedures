@@ -1,0 +1,9 @@
+<view class="top">
+<text>主题</text>
+<input bindinput="getzhuti" type="text"></input>
+</view>
+<view class="bodyer">
+<text>反馈内容</text>
+<textarea bindinput="getfankui" name="" id="" cols="30" rows="10" ></textarea>
+</view>
+<button bindtap="putProblem" type="primary">提交反馈</button>

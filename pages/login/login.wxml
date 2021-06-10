@@ -1,0 +1,19 @@
+<view class="header">
+  <image src="/img/logo.jpg"></image>
+  <text style="font-weight:bold;font-size:40rpx">欢迎登陆</text>
+  <text>寸金快递代取平台</text>
+</view>
+<view class="bodyer">
+  <view class="user">
+    <text>账号</text>
+    <input bindinput="getUserName" placeholder="　请输入账号"></input>
+  </view>
+  <view class="password">
+    <text>密码</text>
+    <input bindinput="getPassWord" type="password" placeholder="　请输入密码"></input>
+  </view>
+</view>
+<view class="footer">
+  <button bindtap="login" type="primary" >登陆</button>
+  <view bindtap="goRegister">还没有账号？点击注册</view>
+</view>

@@ -1,0 +1,22 @@
+/* pages/mysever01/mysever01.wxss */
+page {
+  background-color: #CCE8CF;
+}
+.bodyer {
+  background-color: white;
+  margin: 20rpx;
+  padding: 10rpx;
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */
+  align-items: center;
+}
+image{
+  height: 1000rpx;
+  width: 562rpx;
+}
+text {
+  margin: 30rpx;
+}

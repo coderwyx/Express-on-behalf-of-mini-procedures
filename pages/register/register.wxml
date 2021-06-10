@@ -1,0 +1,15 @@
+<view class="header">
+  <image src="/img/logo.jpg"></image>
+  <text style="font-weight:bold;font-size:40rpx">欢迎注册</text>
+  <text>寸金快递代取平台</text>
+</view>
+<view class="bodyer">
+  <view class="phone">
+    <text>手机号</text>
+    <input bindinput="getPhone" placeholder="请输入手机号码"></input>
+  </view>
+</view>
+<view class="footer">
+  <button type="primary" bindtap="register">注册</button>
+  
+</view>

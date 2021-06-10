@@ -1,0 +1,113 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/order/order",
+          "pathName": "pages/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/service01/service01",
+          "pathName": "pages/service01/service01",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/service02/service02",
+          "pathName": "pages/service02/service02",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/order",
+          "pathName": "pages/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/shouhuodizhi/shouhuodizhi",
+          "pathName": "pages/shouhuodizhi/shouhuodizhi",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addshouhuodizhi/addshouhuodizhi",
+          "pathName": "pages/addshouhuodizhi/addshouhuodizhi",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/service01/service01",
+          "pathName": "pages/service01/service01",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/register/register",
+          "pathName": "pages/register/register",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/info/info",
+          "pathName": "pages/info/info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/service03-1/service03-1",
+          "pathName": "pages/service03-1/service03-1",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/service03-2/service03-2",
+          "pathName": "pages/service03-2/service03-2",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mysever02/mysever02",
+          "pathName": "pages/mysever02/mysever02",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mysever06/mysever06",
+          "pathName": "pages/mysever06/mysever06",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mysever01/mysever01",
+          "pathName": "pages/mysever01/mysever01",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

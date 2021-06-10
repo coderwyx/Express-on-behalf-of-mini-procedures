@@ -1,0 +1,105 @@
+<!-- 待接单部分 -->
+<view wx:if="{{_id==1}}">
+  <view class="top">
+    <text>帮我购买的商品</text>
+  <textarea bindinput="getBuy" name="" id="" cols="30" rows="10" placeholder="{{list.buy}}" placeholder-style="font-size:30rpx"></textarea>
+  </view>
+<view class="bodyer">
+  <view bindtap="openMap" class="buy">
+  <image src="/img/buy.jpg"></image>
+    <text data-index="{{index}}">{{toWhere}}</text>
+  </view>
+  <view bindtap="goShouhuodizhi" class="shou">
+    <image src="/img/shou.jpg"></image>
+    <text>{{where}}</text>
+  </view>
+</view>
+<view class="footer">
+  <view>
+    <image src="/img/time.jpg"></image>
+    <text>购买时间</text>
+    <!-- <input bindinput="getTime" placeholder="请填写购买时间"></input> -->
+    <picker  mode="multiSelector" range="{{multiSelectorData}}" bindchange="timeChange">{{showTime}}</picker>
+  </view>
+  <view>
+    <image src="/img/money.jpg"></image>
+    <text>商品价格</text>
+    <text style="width:400rpx;margin-left:80rpx" bindtap="getMoney">{{money}}元</text>
+    <action-sheet hidden="{{actionSheetHidden}}" bindchange="listenerActionSheet" >
+	<action-sheet-item >
+		<input  type="number" placeholder="请输入预付的商品费(元)" value="{{value}}" bindinput="handleInput">{{value}}</input>
+	</action-sheet-item>
+	<!--自动隐藏action-sheet-->
+	<action-sheet-cancel bindtap="confrimMoney">确认</action-sheet-cancel>
+</action-sheet>
+  </view>
+  <view style="border-bottom:none">
+    <image src="/img/xiaofei.jpg"></image>
+    <text>辛苦费</text>
+    <text style="width:400rpx;margin-left:80rpx" bindtap="getTip">{{tip}}元</text>
+    <action-sheet hidden="{{actionSheetHidden2}}" bindchange="listenerActionSheet2" >
+	<action-sheet-item >
+		<input  type="number" placeholder="请输入给小哥的辛苦费(元)" value="{{value2}}" bindinput="handleInput2">{{value2}}</input>
+	</action-sheet-item>
+	<!--自动隐藏action-sheet-->
+	<action-sheet-cancel bindtap="confrimMoney2">确认</action-sheet-cancel>
+</action-sheet>
+  </view>
+  <button wx:if="{{Overdue}}" bindtap="changeOrder" type="primary">重新发布订单</button>
+  <button wx:else bindtap="changeOrder" type="primary">更改订单</button>
+  <button bindtap="delOrder" type="warn">删除订单</button>
+</view>
+<action-sheet hidden="{{actionSheetHidden3}}" bindchange="listenerActionSheet3" >
+<view class="pay">
+		<text >微信支付</text>
+		<text>{{pay}}元</text>
+  </view>
+  <text style="margin-left:170rpx;color:red">原订单支付金额会原路返回</text>
+  <button type="primary" bindtap="pay" style="width:750rpx">确认支付</button>
+
+</action-sheet>
+</view>
+
+<view wx:if="{{_id==2||_id==4||_id==3}}">
+  <view class="helpPhone" wx:if="{{_id==2||_id==3}}"><text>接单小哥联系电话：{{helpPhone}}</text></view>
+  <view class="top">
+    <text style="font-weight: bold;">帮我购买的商品</text>
+  <text>{{list.buy}}</text>
+  </view>
+<view class="bodyer">
+  <view  class="buy">
+  <image src="/img/buy.jpg"></image>
+    <text data-index="{{index}}">{{toWhere}}</text>
+  </view>
+  <view  class="shou">
+    <image src="/img/shou.jpg"></image>
+    <text>{{where}}</text>
+  </view>
+</view>
+<view class="footer">
+  <view>
+    <image src="/img/time.jpg"></image>
+    <text>购买时间</text>
+    <!-- <input bindinput="getTime" placeholder="请填写购买时间"></input> -->
+    <text style="margin-left:60rpx" wx:if="{{_id==3}}">{{date}}号</text>
+    <text style="margin-left:60rpx" wx:else>{{showTime}}</text>
+  </view>
+  <view>
+    <image src="/img/money.jpg"></image>
+    <text>商品价格</text>
+    <text style="margin-left:60rpx">{{list.money}}元</text>
+  </view>
+  <view style="border-bottom:none">
+    <image src="/img/xiaofei.jpg"></image>
+    <text>辛苦费</text>
+    <text style="margin-left:60rpx">{{list.tip}}元</text>
+  </view>
+  <button wx:if="{{_id==4&&!finish&&!Overdue}}" bindtap="orderFinish" type="primary">订单完成</button>
+  <button wx:if="{{_id==4&&finish}}">等待确认收货</button>
+  <button wx:if="{{_id==4&&!finish}}" bindtap="canceledOrder" type="warn">取消订单</button>
+  <button wx:if="{{finish&&_id==2}}" bindtap="confirm" type="primary">确认收货</button>
+
+</view>
+
+
+</view>

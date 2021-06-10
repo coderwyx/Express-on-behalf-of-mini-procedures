@@ -1,0 +1,29 @@
+/* pages/service03-1/service03-1.wxss */
+button {
+  height: 667rpx;
+  width: 750rpx !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+text {
+  font-size: 150rpx;
+}
+.kuaidi {
+  background-color: #CCE8CF;
+}
+.paotui {
+  background-color: #FAF9DE;
+}
+.back {
+  position: absolute;
+  left: 20rpx;
+  top:40rpx;
+  /* border: 1px red solid; */
+  height: 80rpx;
+  width: 80rpx;
+  font-weight: bold;
+ font-size: 50rpx;
+ text-align: center;
+}

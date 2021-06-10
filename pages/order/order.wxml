@@ -1,0 +1,139 @@
+<view wx:if="{{helpers}}" data-id="4" bindtap="choose" class="helpTabBar">
+  <text data-id="4" bindtap="choose" class="{{_id==4?'click-style':'normal-style'}}">我接到的订单</text>
+</view>
+<view class="topTabBar">
+<text class="{{_id==1?'click-style':'normal-style'}}" data-id="1" bindtap="choose">待接单</text>
+<text class="{{_id==2?'click-style':'normal-style'}}" data-id="2" bindtap="choose">进行中</text>
+<text class="{{_id==3?'click-style':'normal-style'}}" data-id="3" bindtap="choose">已完成</text>
+</view>
+<view class="tips">
+<view style="background-color: #CCE8CF;"></view>
+<text>:快递</text>
+<view style="background-color: #FAF9DE;"></view>
+<text>:跑腿</text>
+<view  style="background-color: #FDE6E0;"></view>
+<text>:已过期</text>
+</view>
+<!-- 待接单订单部分 -->
+<view wx:if="{{_id==1}}">
+<view data-id="{{item._id}}" data-school="mazhang" class="list" bindtap="kuaidiGoDetail" wx:for="{{mazhangkuaidiWaitingOrder}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">快递公司：{{item.kuaidi}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>取件码：{{item.num}}</view>
+</view>
+<view data-id="{{item._id}}" data-school="xinhu" class="list" bindtap="kuaidiGoDetail" wx:for="{{xinhukuaidiWaitingOrder}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">快递公司：{{item.kuaidi}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>取件码：{{item.num}}</view>
+</view>
+<view data-id="{{item._id}}" data-school="mazhang" class="{{item.date==date||item.date==tomorrow?'list2':'list3'}}" bindtap="paotuiGoDetail" wx:for="{{mazhangpaotuiWaitingOrder}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">购买物品：{{item.buy}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>辛苦费：{{item.tip}}元</view>
+</view>
+<view data-id="{{item._id}}" data-school="xinhu" class="{{item.date==date||item.date==tomorrow?'list2':'list3'}}" bindtap="paotuiGoDetail" wx:for="{{xinhupaotuiWaitingOrder}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">购买物品：{{item.buy}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>辛苦费：{{item.tip}}元</view>
+</view>
+</view>
+<!-- 进行中订单部分 -->
+<view wx:if="{{_id==2}}">
+<view data-id="{{item._id}}" data-school="mazhang" class="list" bindtap="kuaidiGoDetail" wx:for="{{mazhangkuaidiOrdering}}" wx:key="key"> 
+  <view style="font-weight:bold;font-size:37rpx">快递公司：{{item.kuaidi}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>取件码：{{item.num}}</view>
+</view>
+<view data-id="{{item._id}}" data-school="xinhu" class="list" bindtap="kuaidiGoDetail" wx:for="{{xinhukuaidiOrdering}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">快递公司：{{item.kuaidi}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>取件码：{{item.num}}</view>
+</view>
+<view data-id="{{item._id}}" data-school="mazhang" data-school="mazhang" class="{{item.date==date||item.date==tomorrow?'list2':'list3'}}" bindtap="paotuiGoDetail" wx:for="{{mazhangpaotuiOrdering}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">购买物品：{{item.buy}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>辛苦费：{{item.tip}}元</view>
+</view>
+<view data-id="{{item._id}}" data-school="xinhu" data-school="xinhu" class="{{item.date==date||item.date==tomorrow?'list2':'list3'}}" bindtap="paotuiGoDetail" wx:for="{{xinhupaotuiOrdering}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">购买物品：{{item.buy}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>辛苦费：{{item.tip}}元</view>
+</view>
+</view>
+
+<!-- 我接到的订单部分 -->
+<view wx:if="{{_id==4}}">
+<view data-id="{{item._id}}" data-school="mazhang"  class="list" bindtap="kuaidiGoDetail" wx:for="{{mazhangkuaidiGotOrder}}" wx:key="key"> 
+  <view style="font-weight:bold;font-size:37rpx">快递公司：{{item.kuaidi}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>取件码：{{item.num}}</view>
+</view>
+<view data-id="{{item._id}}" data-school="xinhu" class="list" bindtap="kuaidiGoDetail" wx:for="{{xinhukuaidiGotOrder}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">快递公司：{{item.kuaidi}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>取件码：{{item.num}}</view>
+</view>
+<view data-id="{{item._id}}" data-school="mazhang"  class="{{item.date==date||item.date==tomorrow?'list2':'list3'}}" bindtap="paotuiGoDetail" wx:for="{{mazhangpaotuiGotOrder}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">购买物品：{{item.buy}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>辛苦费：{{item.tip}}元</view>
+</view>
+<view data-id="{{item._id}}" data-school="xinhu"  class="{{item.date==date||item.date==tomorrow?'list2':'list3'}}" bindtap="paotuiGoDetail" wx:for="{{xinhupaotuiGotOrder}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">购买物品：{{item.buy}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>辛苦费：{{item.tip}}元</view>
+</view>
+</view>
+
+<!-- 已完成的订单 -->
+<view wx:if="{{_id==3}}">
+<view data-id="{{item._id}}" data-school="mazhang"  class="list" bindtap="kuaidiGoDetail" wx:for="{{mazhangkuaidiFinish}}" wx:key="key"> 
+  <view style="font-weight:bold;font-size:37rpx">快递公司：{{item.kuaidi}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>取件码：{{item.num}}</view>
+</view>
+<view data-id="{{item._id}}" data-school="mazhang"  class="list" bindtap="kuaidiGoDetail" wx:for="{{mymazhangkuaidiFinish}}" wx:key="key"> 
+ 
+  <view style="font-weight:bold;font-size:37rpx">快递公司：{{item.kuaidi}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view wx:if="{{item.volume=='小件'}}">赏金已到账：3元</view>
+  <view wx:if="{{item.volume=='中件'}}">赏金已到账：4元</view>
+  <view wx:if="{{item.volume=='大件'}}">赏金已到账：5元</view>
+  <view>订单已完成：客户已确认收货</view>
+</view>
+<view data-id="{{item._id}}" data-school="xinhu" class="list" bindtap="kuaidiGoDetail" wx:for="{{xinhukuaidiFinish}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">快递公司：{{item.kuaidi}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>取件码：{{item.num}}</view>
+</view>
+<view data-id="{{item._id}}" data-school="xinhu" class="list" bindtap="kuaidiGoDetail" wx:for="{{myxinhukuaidiFinish}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">快递公司：{{item.kuaidi}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view wx:if="{{item.volume=='小件'}}">赏金已到账：3元</view>
+  <view wx:if="{{item.volume=='中件'}}">赏金已到账：4元</view>
+  <view wx:if="{{item.volume=='大件'}}">赏金已到账：5元</view>
+  <view>订单已完成：客户已确认收货</view>
+</view>
+<view data-id="{{item._id}}" data-school="mazhang" class="list2" bindtap="paotuiGoDetail" wx:for="{{mazhangpaotuiFinish}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">购买物品：{{item.buy}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>辛苦费：{{item.tip}}元</view>
+</view>
+<view data-id="{{item._id}}" data-school="mazhang" class="list2" bindtap="paotuiGoDetail" wx:for="{{mymazhangpaotuiFinish}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">购买物品：{{item.buy}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>赏金已到账：{{item.tip}}元</view>
+  <view>订单已完成：客户已确认收货</view>
+</view>
+<view data-id="{{item._id}}" data-school="xinhu" class="list2" bindtap="paotuiGoDetail" wx:for="{{xinhupaotuiFinish}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">购买物品：{{item.buy}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>辛苦费：{{item.tip}}元</view>
+</view>
+<view data-id="{{item._id}}" data-school="xinhu" class="list2" bindtap="paotuiGoDetail" wx:for="{{myxinhupaotuiFinish}}" wx:key="key">
+  <view style="font-weight:bold;font-size:37rpx">购买物品：{{item.buy}}</view>
+  <view>收货地址：{{item.where}}</view>
+  <view>赏金以到账：{{item.tip}}元</view>
+  <view>订单已完成：客户已确认收货</view>
+</view>
+</view>

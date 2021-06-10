@@ -1,0 +1,33 @@
+.all {
+
+  display: flex;
+  flex-direction: column;
+
+}
+.all view {
+  display: flex;
+  height: 120rpx;
+  border-bottom: 1rpx solid rgb(230, 223, 223);
+  align-items: center;
+}
+page {
+  background-color: white;
+}
+input {
+ 
+  flex-grow: 1;
+  height: 90rpx;
+}
+.all text {
+  margin-left: 20rpx;
+  width: 25%;
+ 
+}
+button {
+  margin-top: 20rpx;
+}
+.buttom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

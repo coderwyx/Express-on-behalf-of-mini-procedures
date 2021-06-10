@@ -1,0 +1,45 @@
+<image src="/img/banner06.jpg"></image>
+<view class="ifon"> 
+  <view wx:if="{{isShowUserName}}">
+       <image bindtap="goInfo"  class="avatarUrl" src="{{userInfo.avatarUrl}}"></image>
+       <text  class="userName">{{userInfo.nickName}}</text>
+  </view>
+  <!-- <image wx:if="{{userInfo.avatarUrl}}" class="avatarUrl" src="{{userInfo.avatarUrl}}"></image> -->
+  <!-- <button style="width: 150rpx;height: 150rpx;border-radius: 50%; "wx:else bindgetuserinfo="handleGetUserInfo" class="ifonMine" open-type="getUserInfo" >未登录</button> -->
+  <view class="login" wx:if="{{!isShowUserName}}" bindtap="getUserProfile">登录/注册</view>
+ <view wx:if="{{helpers&&isShowUserName}}" class="money">余额：{{money}}元</view>
+ <button wx:if="{{helpers&&isShowUserName}}" bindtap="takeMoney" class="takeMoney">提现</button>
+  
+</view>
+<view class="mySever">
+  <text style="font-weight:bold;font-size:28rpx;position:absolute;left:40rpx;top:20rpx">我的服务</text>
+<view bindtap="goSever01" class="Sever">
+  <image src="/img/mysever01.png"></image>
+  <!-- <text style="font-size:100rpx;color:yellow" class="iconfont icon-shiyongzhinan"></text> -->
+  <text>使用指南</text>
+</view>
+<view bindtap="goSever02" class="Sever">
+  <image src="/img/mysever02.jpg"></image>
+  
+  <text>申请帮忙</text>
+</view>
+<view class="Sever">
+  <button style="width: 130rpx;padding:0;font-size: 20rpx;background-color: white;margin-top:50rpx" open-type="contact"  >
+  <image src="/img/mysever03.png"></image>
+  <text style="margin:0;">联系客服</text>
+</button>
+</view>
+
+<view bindtap="goShouhuodizhi" class="Sever">
+  <image src="/img/mysever04.png"></image>
+  <text>收货地址</text>
+</view>
+<view bindtap="goSever05" class="Sever">
+  <image src="/img/mysever05.png"></image>
+  <text>关于我们</text>
+</view>
+<view bindtap="goSever06" class="Sever">
+  <image src="/img/mysever06.png"></image>
+  <text>意见反馈</text>
+</view>
+</view>

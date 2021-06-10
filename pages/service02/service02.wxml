@@ -1,0 +1,58 @@
+<view class="service02">
+  <view class="top">
+    <text>帮我购买的商品</text>
+  <textarea  bindinput="getBuy" name="" id="" cols="30" rows="10" placeholder="想买什么，就买什么！请填写商品名称和数量" placeholder-style="font-size:30rpx"></textarea>
+  </view>
+<view class="bodyer">
+  <view bindtap="openMap" class="buy">
+  <image src="/img/buy.jpg"></image>
+    <text>{{toWhere}}</text>
+  </view>
+  <view bindtap="goShouhuodizhi" class="shou">
+    <image src="/img/shou.jpg"></image>
+    <text>{{where}}</text>
+  </view>
+</view>
+<view class="footer">
+  <view>
+    <image src="/img/time.jpg"></image>
+    <text>购买时间</text>
+    <!-- <input bindinput="getTime" placeholder="请填写购买时间"></input> -->
+    <picker  mode="multiSelector" range="{{multiSelectorData}}" bindchange="timeChange">{{showTime}}</picker>
+  </view>
+  <view>
+    <image src="/img/money.jpg"></image>
+    <text>商品价格</text>
+    <text style="width:400rpx;margin-left:80rpx" bindtap="getMoney">{{money}}</text>
+    <action-sheet hidden="{{actionSheetHidden}}" bindchange="listenerActionSheet" >
+	<action-sheet-item >
+		<input  type="number" placeholder="请输入预付的商品费(元)" value="{{value}}" bindinput="handleInput">{{value}}</input>
+	</action-sheet-item>
+	<!--自动隐藏action-sheet-->
+	<action-sheet-cancel bindtap="confrimMoney">确认</action-sheet-cancel>
+</action-sheet>
+  </view>
+  <view style="border-bottom:none">
+    <image src="/img/xiaofei.jpg"></image>
+    <text>辛苦费</text>
+    <text style="width:400rpx;margin-left:80rpx" bindtap="getTip">{{tip}}</text>
+    <action-sheet style="height:500rpx" hidden="{{actionSheetHidden2}}" bindchange="listenerActionSheet2" >
+	<action-sheet-item >
+		<input  type="number" placeholder="请输入给小哥的辛苦费(元)" value="{{value2}}" bindinput="handleInput2">{{value2}}</input>
+	</action-sheet-item>
+	<!--自动隐藏action-sheet-->
+	<action-sheet-cancel bindtap="confrimMoney2">确认</action-sheet-cancel>
+</action-sheet>
+  </view>
+  <button bindtap="addOrder" type="primary">立即下单</button>
+</view>
+
+<action-sheet hidden="{{actionSheetHidden3}}" bindchange="listenerActionSheet3" >
+<view class="pay">
+		<text >微信支付</text>
+		<text>{{pay}}元</text>
+  </view>
+ 
+  <button type="primary" bindtap="pay" style="width:750rpx">确认支付</button>
+</action-sheet>
+</view>

@@ -1,0 +1,132 @@
+/* pages/order-1/order-1.wxss */
+page {
+  background-color: white;
+}
+.service01 {
+  display: flex;
+  flex-direction: column;
+  
+}
+input{
+  padding-left: 10rpx;
+  display: inline-block;
+  flex-grow: 1;
+  height: 70rpx;
+
+}
+.service01 view {
+  
+  border-bottom: #ccc 1px solid;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+text {
+  padding-left: 10rpx;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  width: 23%;
+
+}
+textarea {
+  flex-grow: 1;
+ padding: 10rpx;
+  height: 400rpx;
+  padding-left: 40rpx;
+  margin-top: 30rpx;
+}
+.shouhuodizhi {
+  height: 100%;
+  flex-grow: 1;
+  height: 30rpx;
+  color: #808080;
+ /* border: 1px red solid; */
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+.top {
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+}
+.where {
+  font-weight: bold;
+  font-size: 40rpx;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  height: 55rpx;
+ 
+}
+.name {
+  padding-top: 10rpx;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  border-bottom: none;
+}
+button {
+  margin-bottom: 10rpx;
+}
+.helpPhone {
+ 
+  font-weight: bold;
+  height: 75rpx;
+  font-size: 50rpx;
+  text-align: center;
+  background-color: yellowgreen;
+}
+.beizhu {
+  height: 400rpx;
+  width: 700rpx;
+  margin-left: 50rpx;
+}
+.click-style {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.normal-style {
+  font-size:35rpx
+}
+.volume {
+  display: flex;
+  /* border: 1px solid red; */
+}
+.volume text {
+  width: 33%;
+  text-align: center;
+
+  border-right: 1px solid #808080;
+  /* border: 1px red solid; */
+  margin: 0;
+}
+.s text {
+  font-weight: bold;
+  font-size: 35rpx;
+  margin-left: 75rpx;
+ 
+}
+.m text {
+  font-weight: bold;
+  font-size: 35rpx;
+  margin-left: 300rpx;
+}
+.l text {
+  font-weight: bold;
+  font-size: 35rpx;
+  margin-left: 520rpx;
+}
+.pay {
+  display: flex;
+  height: 200rpx;
+
+  text-align: center;
+  justify-content: center;
+
+}
+.pay text {
+  font-size: 40rpx;
+  font-weight: bold;
+  width: 100%;
+}

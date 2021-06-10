@@ -1,0 +1,118 @@
+<view wx:if="{{_id==1}}">
+
+<view style="border-bottom:1px #ccc solid;margin-left: 20rpx;margin-right: 20rpx;"></view>
+<view class="service01">
+
+  <view class="top"  bindtap="goShouhuodizhi">
+    <view style=" border-bottom: none;" class="where">{{where}}</view>
+    <view style=" border-bottom: none;" class="name">{{name}} 　　{{phone}}</view>
+  </view>
+
+  <!-- <view>
+    <text>联系人:</text>
+    <input bindinput="getName" placeholder="请填写收货人姓名"></input> 
+  </view>
+  <view>
+    <text>手机号码：</text>
+    <input bindinput="getPhone"  placeholder="请填写收货手机号码"></input> 
+  </view> -->
+
+  <view>
+    <text>快递公司:</text>
+    <input bindinput="getKuaidi" placeholder="{{kuaidi}}"></input>
+  </view>
+  <view>
+    <text>取件码:</text>
+    <input bindinput="getNum" placeholder="{{num}}"></input>
+  </view>
+  <view>
+    <text>取件地址:</text>
+    <input bindinput="getToWhere" placeholder="{{toWhere}}"></input>
+  </view>
+  <view class="volume">
+<text class="{{id==1?'click-style':'normal-style'}}" data-id="1" bindtap="choose">小件</text>
+<text class="{{id==2?'click-style':'normal-style'}}" data-id="2" bindtap="choose">中件</text>
+<text style="border-right:none" class="{{id==3?'click-style':'normal-style'}}" data-id="3" bindtap="choose">大件</text>
+</view>
+<view class="s" wx:if="{{id==1}}">
+  <text>3元</text>
+</view>
+<view class="m" wx:if="{{id==2}}">
+  <text>4元</text>
+</view>
+<view class="l" wx:if="{{id==3}}">
+  <text>5元</text>
+</view>
+
+  <view style=" border-bottom: none;">
+    <text>备注:</text>
+    <textarea bindinput="getBeizhu" name="" id="" cols="30" rows="10" placeholder="{{beizhu}}"></textarea>
+  </view>
+  <button wx:if="{{_id==4}}" type="primary" bindtap="delOrder">完成订单</button>
+  <button wx:if="{{_id==1}}" type="primary" bindtap="changeOrder">更改订单</button>
+  <button wx:if="{{_id==4||_id==2}}" type="warn" bindtap="delOrder">取消订单</button>
+  <button wx:if="{{_id==1}}" type="warn" bindtap="delOrder">取消订单</button>
+
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="listenerActionSheet" >
+<view  style="border:none" class="pay">
+		<text >微信支付</text>
+
+    <text>{{money}}</text>
+   
+  </view>
+  <text style="margin-left:170rpx;color:red">原订单支付金额会原路返回</text>
+  <button type="primary" bindtap="pay" style="width:750rpx">确认支付</button>
+</action-sheet>
+</view>
+</view>
+
+<view  wx:if="{{_id==2||_id==4||_id==3}}"> 
+  <view class="helpPhone" wx:if="{{_id==2||_id==3}}"><text>接单小哥联系电话：{{helpPhone}}</text></view>
+<view style="border-bottom:1px #ccc solid;margin-left: 20rpx;margin-right: 20rpx;"></view>
+<view class="service01">
+
+  <view class="top" >
+    <view style=" border-bottom: none;" class="where">{{where}}</view>
+    <view style=" border-bottom: none;" class="name">{{name}} 　　{{phone}}</view>
+  </view>
+
+  
+  <view>
+    <text>快递公司:</text>
+    <text>{{kuaidi}}</text>
+  </view>
+  <view>
+    <text>取件码:</text>
+    <text>{{num}}</text>
+  </view>
+  <view>
+    <text>取件地址:</text>
+    <text>{{toWhere}}</text>
+  </view>
+  <view class="volume">
+<text class="{{id==1?'click-style':'normal-style'}}" data-id="1">小件</text>
+<text class="{{id==2?'click-style':'normal-style'}}" data-id="2" >中件</text>
+<text style="border-right:none" class="{{id==3?'click-style':'normal-style'}}" data-id="3" >大件</text>
+</view>
+<view class="s" wx:if="{{id==1}}">
+  <text>3元</text>
+</view>
+<view class="m" wx:if="{{id==2}}">
+  <text>4元</text>
+</view>
+<view class="l" wx:if="{{id==3}}">
+  <text>5元</text>
+</view>
+
+
+  <view style=" border-bottom: none;">
+    <text>备注:</text>
+    <text class="beizhu"> {{beizhu}}</text>
+  </view>
+  <button  wx:if="{{_id==4&&!finish}}" type="primary" bindtap="orderFinish">订单完成</button>
+  <button wx:if="{{finish&&_id==4}}">等待确认收货</button>
+  <button  wx:if="{{_id==4&&!finish}}" type="warn" bindtap="canceledOrder">取消订单</button>
+  <button wx:if="{{finish&&_id==2}}" bindtap="confirm" type="primary">确认收货</button>
+ 
+</view>
+</view>

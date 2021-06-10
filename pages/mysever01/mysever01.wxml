@@ -1,0 +1,24 @@
+<view class="bodyer" >
+<text>首先进入小程序是这样一个页面</text>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/index.jpg"></image>
+<text>想使用这个小程序必须要点击右下角我的，跳转到我的页面进行注册</text>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/index02.png"></image>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/zhuce.png"></image>
+<text>这里记得填写正确的电话号码哟</text>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/zhuce02.jpg"></image>
+<text>注册好之后就可以使用小程序来发布自己的订单了，但是要先选择所在校区,如果校区选错了,那么本校区的人就看不到你的订单了哟</text>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/index03.png"></image>
+<text>选择好了校区，上面两个功能就都能使用了，快递代取点击进去是这样,按照提示输入正确的信息就可以了,值得一提的是第四行的取件地址,那个是填你的快递现在在哪，你需要跑腿小哥去哪里帮你取快递，不是你自己的所在地哦，这里要注意啦！</text>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/kuaidi.jpg"></image>
+<text>发布跑腿订单的页面是这样的,也是根据提示输入正确信息就好了,商品价格是指你要购买商品的价格是多少钱,如果不清楚呢就写个大概的,到时候和跑腿小哥交流,多退少补，下面那个辛苦费就是单纯给小哥的辛苦费了</text>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/paotui.jpg"></image>
+<text>发布了订单，跑腿小哥就可以在我要帮助里面看到你的订单了,同时我们有空的时候也可以自己也可以在上面接一些订单,但是接单之前，首先要申请这个帮助的资格才行</text>
+<text style="font-weight:bold">申请帮助资格</text>
+<text>申请帮助按钮在我的页面中,申请之前需要在个人信息页面把信息完善才能申请</text>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/info.png"></image>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/info02.png"></image>
+<text>完善好信息后就可以点击申请帮忙来申请帮忙的资格啦，然后里面有一些注意事项等等，各位要申请的小伙伴要认真看看哟</text>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/shenqing.jpg"></image>
+<text>提交申请之后大概需要2~3天的时间审核，审核成功后你的的页面也会发生一些变化,出现了余额和提现按钮就说明你已经申请成功了,可以去大厅接单了</text>
+<image src="cloud://wangyuxuan-8ggdr9h320998a2d.7761-wangyuxuan-8ggdr9h320998a2d-1305203961/info03.png"></image>
+</view>

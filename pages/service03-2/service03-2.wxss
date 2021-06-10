@@ -1,0 +1,35 @@
+/* pages/service03-2/service03-2.wxss */
+.list {
+  background-color: white;
+  /* border: 1px red solid; */
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  padding: 20rpx;
+  margin: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list view {
+  /* border:  1px red solid; */
+  margin: 5rpx;
+}
+.buy {
+  font-weight: bold;
+  font-size: 37rpx;
+}
+button {
+  margin-top: 30rpx;
+}
+.nothing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30rpx;
+  margin-top: 50rpx;
+}

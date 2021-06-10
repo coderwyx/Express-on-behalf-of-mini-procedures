@@ -1,0 +1,121 @@
+/* pages/order-2/order-2.wxss */
+.top {
+  display: flex;
+  flex-direction: column;
+  height: 200rpx;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  margin: 20rpx;
+  background-color: white;
+  
+}
+.top text {
+  
+  margin: 20rpx 0 0 40rpx;
+  
+ 
+}
+.top textarea {
+  
+  height:100rpx ;
+  width: 640rpx ;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding: 20rpx;
+}
+.bodyer {
+  display: flex;
+  flex-direction: column;
+  height: 250rpx;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  margin: 20rpx;
+  background-color: white;
+  
+}
+.bodyer view {
+  height: 50%;
+}
+.bodyer image, .shou image {
+  height: 90rpx;
+  width: 90rpx;
+}
+.buy,.shou{
+  display: flex;
+ 
+  margin: 20rpx;
+  align-items: center;
+}
+.buy text {
+  /* color: #808080; */
+  padding-left: 30rpx;
+  font-size: 35rpx;
+}
+.shou text {
+  /* color: #808080; */
+  padding-left: 20rpx;
+  font-size: 35rpx;
+}
+.shou image {
+  margin-left: 10rpx;
+}
+.footer {
+  height: 420rpx;
+
+  margin: 20rpx;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  background-color: white;
+}
+.footer view {
+  height: 140rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1rpx #e4e4e4;
+  margin: 0 40rpx;
+}
+.footer image {
+  height: 70rpx;
+  width: 70rpx;
+ 
+}
+.footer text {
+  color: #666;
+  width: 25%;
+}
+
+button {
+  margin-top: 30rpx;
+}
+picker {
+  color: #666;
+  margin-left: 70rpx;
+}
+.helpPhone {
+  display: flex;
+  font-weight: bold;
+  height: 75rpx;
+  font-size: 30rpx;
+  align-items: center;
+  background-color: yellowgreen;
+  justify-content: center;
+}
+.pay {
+  display: flex;
+  height: 200rpx;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.pay text {
+  font-size: 40rpx;
+  font-weight: bold;
+  width: 100%;
+  
+}

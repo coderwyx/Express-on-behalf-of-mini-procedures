@@ -1,0 +1,27 @@
+<view class="info">
+  <view class="name">
+    <text>姓名</text>
+    <input bindinput="getName" placeholder="{{name}}"></input>
+  </view>
+  <view class="phone">
+    <text>手机号</text>
+    <input bindinput="getPhone" placeholder="{{phone}}"></input>
+  </view>
+
+  <picker name="genderPicker" value='{{genderindex}}' range="{{genderArray}}" bindchange="bindGenderChange">
+    <view class="gender" style="display:flex;justify-content: space-between;">
+      <text>性别</text>
+      <view>{{gender}} ></view>
+    </view>
+  </picker>
+
+  <picker name="datePicker" mode="date" value="{{date}}" start="1950-09-01" end="2020-09-01"
+    bindchange="bindBirthdayChange">
+    <view class="birthday" style="display:flex;justify-content: space-between;">
+      <text>生日</text>
+      <view class="date">{{birthday}} ></view>
+    </view>
+  </picker>
+
+</view>
+<button bindtap="changeInfo" type="primary">保存</button>

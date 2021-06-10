@@ -1,0 +1,13 @@
+<view>
+  <view>
+    <button bindtap="goKuaidi" class="kuaidi">
+     <text>快递</text>
+    </button>
+  </view>
+  <view bindtap="goPaotui">
+  <button class="paotui">
+    <text>跑腿</text>
+  </button>
+  </view>
+</view>
+<view bindtap="back" class="back">{{a}}</view>

@@ -1,0 +1,12 @@
+<view style="border:1rpx solid #f2f3f5; "></view>
+<view  wx:for="{{list}}" wx:key="key" class="list">
+  <view class="xinxi" bindtap="goDetail" data-where="{{item.where}}"  data-name="{{item.name}}" data-phone="{{item.phone}}">
+    <view class="where">{{item.where}}</view>
+    <view class="name">{{item.name}} 　{{item.phone}}</view>
+  </view>
+  <image data-where="{{item.where}}"  data-id="{{item._id}}" data-name="{{item.name}}" data-phone="{{item.phone}}" bindtap="goAdd2" src="/img/change.jpg"></image>
+</view>
+<view class="mind"></view>
+<view bindtap="goAdd" class="add">
+  <text>新增收货地址</text>
+</view>

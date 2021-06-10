@@ -1,0 +1,19 @@
+/* pages/mysever02/mysever02.wxss */
+page {
+  background-color: #CCE8CF;
+}
+view {
+  border-radius: 30rpx;
+  background-color: white;
+  margin: 40rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+}
+.top {
+  font-weight: bold;
+  margin-top: 0;
+}
+view text {
+  margin-top: 10rpx;
+}
